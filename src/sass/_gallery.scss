@@ -1,0 +1,239 @@
+.gallery-section {
+   padding-bottom: 80px;   
+
+   @media screen and (min-width: $tablet) {
+            padding-bottom: 118px;
+   }
+
+   @media screen and (min-width: $desktop) {
+            padding-bottom: 137px;
+   }
+}
+
+.container__wrapper {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+
+.container__first, .container__second, .container__third,
+.container__fourth, .container__fifth {
+   margin-right: 2px;
+
+   @media screen and (min-width: $tablet) {
+   margin-right: 4px;
+   }
+
+   @media screen and (min-width: $desktop) {
+    margin-right: 7px;
+   }
+ }
+
+.container__image1, .container__image2, .container__image3,
+.container__image4, .container__image5, .container__image6,
+.container__image7, .container__image8, .container__image9,
+.container__image10 {
+   overflow: hidden;
+   border-radius: 8px;
+   transform: scale(1) translateX(0);
+
+   transition: transform 250ms ease-in-out;
+
+    @media screen and (min-width: $mobile) {
+   border-radius: 10px;
+   }
+
+    @media screen and (min-width: $tablet) {
+   border-radius: 16px;
+   }
+
+    @media screen and (min-width: $desktop) {
+   border-radius: 22px;
+   }
+}
+
+
+.container__image1:hover,
+.container__image1:focus {
+   box-shadow: 0px 8px 30px rgba(250, 250, 250, 0.673);   
+   cursor: pointer;
+   transform: scale(1.3) translateX(-8px); 
+
+   @media screen and (min-width: $mobile) {
+      transform: scale(1.3) translateX(-12px);
+   }
+
+   @media screen and (min-width: $desktop) {
+      transform: scale(1.3) translate(-15px);
+   }
+}
+.container__image2:hover,
+.container__image2:focus {
+   box-shadow: 0px 8px 30px rgba(250, 250, 250, 0.673);    
+   cursor: pointer;
+   transform: scale(1.3) translate(-8px,-8px); 
+
+   @media screen and (min-width: $tablet) {
+      transform: scale(1.3) translate(-10px,-10px);
+   }
+
+   @media screen and (min-width: $desktop) {
+      transform: scale(1.3) translate(-15px,-15px);
+   }
+}
+
+.container__image3:hover,
+.container__image3:focus {
+   box-shadow: 0px 8px 30px rgba(250, 250, 250, 0.673);    
+   cursor: pointer;
+   transform: scale(1.3) translate(-8px,8px); 
+
+   @media screen and (min-width: $tablet) {
+      transform: scale(1.3) translate(-10px,10px);
+   }
+
+   @media screen and (min-width: $desktop) {
+      transform: scale(1.3) translate(-20px,-20px);
+   }
+}
+.container__image4:hover,
+.container__image4:focus {
+   box-shadow: 0px 8px 30px rgba(250, 250, 250, 0.673);   
+   cursor: pointer;
+   transform: scale(1.3) translate(-15px,-15px); 
+
+   @media screen and (min-width: $tablet) {
+      transform: scale(1.3) translate(-22px,-22px);
+   }
+
+   @media screen and (min-width: $desktop) {
+      transform: scale(1.3) translate(-30px,-30px);
+   }
+} 
+.container__image5:hover,
+.container__image5:focus {
+   box-shadow: 0px 8px 30px rgba(250, 250, 250, 0.673);    
+   cursor: pointer;
+   transform: scale(1.3) translateX(10px);
+   
+   @media screen and (min-width: $tablet) {
+      transform: scale(1.3) translateX(17px);
+   }
+
+   @media screen and (min-width: $desktop) {
+      transform: scale(1.3) translateX(20px);
+   }
+}
+.container__image6:hover,
+.container__image6:focus {
+   box-shadow: 0px 8px 30px rgba(250, 250, 250, 0.673);  
+   cursor: pointer;
+   transform: scale(1.3) translate(-8px,-8px); 
+
+   @media screen and (min-width: $tablet) {
+      transform: scale(1.3) translate(-10px,-10px);
+   }
+
+   @media screen and (min-width: $desktop) {
+      transform: scale(1.3) translate(-15px,-15px);
+   }
+}
+.container__image7:hover,
+.container__image7:focus {
+   box-shadow: 0px 8px 30px rgba(250, 250, 250, 0.632);  
+   cursor: pointer;
+   transform: scale(1.3) translateX(-8px);
+   
+   @media screen and (min-width: $tablet) {
+      transform: scale(1.3) translateX(-10px);
+   }
+
+   @media screen and (min-width: $desktop) {
+      transform: scale(1.3) translateX(-15px);
+   }
+} 
+.container__image8:hover,
+.container__image8:focus {
+   box-shadow: 0px 8px 30px rgba(250, 250, 250, 0.673);    
+   cursor: pointer;
+   transform: scale(1.3) translate(-8px,-8px);
+   
+   @media screen and (min-width: $tablet) {
+      transform: scale(1.3) translate(-10px,-10px);
+   }
+
+   @media screen and (min-width: $desktop) {
+      transform: scale(1.3) translate(-15px,-15px);
+   }
+}
+.container__image9:hover,
+.container__image9:focus {
+   box-shadow: 0px 8px 30px rgba(250, 250, 250, 0.673);    
+   cursor: pointer;
+   transform: scale(1.3) translate(-8px,8px);
+   
+   @media screen and (min-width: $tablet) {
+      transform: scale(1.3) translate(-10px,10px);
+   }
+
+   @media screen and (min-width: $desktop) {
+      transform: scale(1.3) translate(-15px,15px);
+   }
+} 
+.container__image10:hover,
+.container__image10:focus {
+   box-shadow: 0px 8px 30px rgba(250, 250, 250, 0.673);   
+   cursor: pointer;
+   transform: scale(1.3) translate(8px);
+   
+   @media screen and (min-width: $tablet) {
+      transform: scale(1.3) translate(12px);
+   }
+
+   @media screen and (min-width: $desktop) {
+      transform: scale(1.3) translate(15px);
+   }
+}
+
+.container__image2,
+.container__image4,
+.container__image6,
+.container__image8 {
+    margin-bottom: 2px;
+
+    @media screen and (min-width: $tablet) {
+    margin-bottom: 4px;
+    }
+
+    @media screen and (min-width: $desktop) {
+     margin-bottom: 7px;
+    }
+}
+
+.container__fourth {
+    margin-top: 25px;
+
+    @media screen and (min-width: $tablet) {
+     margin-top: 35px;
+   }
+
+    @media screen and (min-width: $desktop) {
+     margin-top: 45px;
+   }
+}
+
+.container__fifth {
+    margin-bottom: 35px;
+
+    @media screen and (min-width: $tablet) {
+    margin-bottom: 45px;
+   }
+
+    @media screen and (min-width: $desktop) {
+     margin-bottom: 55px;
+   }
+}
+
+
+

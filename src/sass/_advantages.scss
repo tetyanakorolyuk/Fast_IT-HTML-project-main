@@ -1,0 +1,189 @@
+
+.advantages {
+    background-color: $second-section-color;
+    padding-bottom: 145px;
+    margin-bottom: -48px;
+
+ &:hover .advantages-list__item--first {
+        transform: translateX(70px) translateY(20px) scale(1.2);
+    }
+ &:hover .advantages-list__item--second {
+        transform: translatex(10px) translateY(-20px) scale(1.2);
+    }
+    &:hover .advantages-list__item--third {
+        transform: translatex(70px) translateY(-20px) scale(1.2);
+    }
+
+    @media screen and (min-width: $tablet) {
+      padding-bottom: 246px;
+      margin-bottom: -106px;
+
+ &:hover .advantages-list__item--first {
+        transform: translateX(-40px) rotate(360deg) scale(1.2);
+    }
+ &:hover .advantages-list__item--second {
+        transform: rotate(360deg) scale(1.2);
+    }
+ &:hover .advantages-list__item--third {
+        transform: translateX(40px) rotate(360deg) scale(1.2);
+    }
+ }
+
+    @media screen and (min-width: $desktop) {
+        padding-bottom: 310px;
+        margin-bottom: -171px;
+      }
+}
+
+.advantages-list {
+    padding: 66px 70px 0 20px;
+
+    @media screen and (min-width: $tablet) {
+        display: flex;
+        padding: 86px 76px 0 36px;
+    }
+
+    @media screen and (min-width: $desktop) {
+        padding: 90px 115px 0 115px;
+    }
+
+&__item {
+    position: relative;
+    transition: all 500ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &::before {
+        animation: rotateWithOrigin 3000ms linear 1000ms infinite;
+    }
+
+    @media screen and (max-width: 767px) {
+        max-width: 230px;
+
+    &:not(:last-child) {
+        margin-bottom: 104px;
+    }
+     }
+
+    @media screen and (min-width: $tablet) {
+        &:not(:last-child) {
+            margin-right: 60px;
+        }
+        transition: all 2500ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    @media screen and (min-width: $desktop) {
+
+        &:not(:last-child) {
+            margin-right: 30px;
+        }
+}
+ }
+
+&__item--first::before {
+    content: " ";
+    position: absolute;
+    height: 50px;
+    width: 44px;
+    top: -66px;
+    left: -15px;
+    background-image: url("../images/ice-cream1.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    @media screen and (min-width: $tablet) {
+        top: -85px;
+    }
+
+    @media screen and (min-width: $desktop) {
+        top: -89px;
+}
+ }
+
+&__item--second::before {
+    content: " ";
+    position: absolute;
+    height: 50px;
+    width: 44px;
+    top: -66px;
+    left: -15px;
+    background-image: url("../images/ice-cream2.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    @media screen and (min-width: $tablet) {
+        top: -85px;
+    }
+
+    @media screen and (min-width: $desktop) {
+        top: -89px;
+}
+ }
+
+&__item--third::before {
+    content: " ";
+    position: absolute;
+    height: 50px;
+    width: 44px;
+    top: -66px;
+    left: -8px;
+    background-image: url("../images/ice-cream3.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    @media screen and (min-width: $tablet) {
+        top: -85px;
+    }
+
+    @media screen and (min-width: $desktop) {
+        top: -89px;
+}
+ }
+
+&__title {
+    font-family: $font-secondary;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.1;
+    letter-spacing: 0.04em;
+    text-align: left;
+    color: $accent-color;
+    margin-bottom: 13px;
+
+    @media screen and (min-width: $tablet) {
+        font-size: 48px;
+    }
+
+    @media screen and (min-width: $desktop) {
+    font-size: 58px;
+    margin-bottom: 15px;
+}
+ }
+
+&__description {
+    font-family: $font-primary;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.7;
+    letter-spacing: 0em;
+    text-align: left;
+    color: $secondary-text-color;
+
+    @media screen and (min-width: $tablet) {
+        font-size: 14px;
+    }
+
+    @media screen and (min-width: $desktop) {
+    font-size: 16px;
+}
+ }
+}
+
+@keyframes rotateWithOrigin {
+    0% {
+        transform: rotate3d(0, 0, 1, 0deg);
+    }
+    100% {
+        transform: rotate3d(0, 0, 1, 360deg);
+    }
+}
